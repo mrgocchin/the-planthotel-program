@@ -1,4 +1,4 @@
-public class Plant {
+public abstract class Plant {
    // why not necessary? --> private String plantSpecie;
     private double height;
     private String name;
@@ -15,8 +15,7 @@ public class Plant {
     public String getName() {
         return name;
     }
-    public void wateringService (){
-    }
+    public abstract String wateringService ();
 
   //  String wateringMessage = "The plant called " + this.name + " wants to be watered with " + this.calculateLiquidAmount() + " liters of " + this.getLiquidType();
   //      return wateringMessage

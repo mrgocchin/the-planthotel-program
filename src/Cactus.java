@@ -12,9 +12,9 @@ public class Cactus extends Plant {
 
     }
     @Override
-    public void wateringService (){
+    public String wateringService (){
 
-        String wateringMessage = "The plant called " + this.getName() + " wants to be watered with " + this.calculateLiquidAmount() + " liters of " + this.getLiquidType();
-        System.out.println(wateringMessage);
+        String wateringMessage = "The plant called " + this.getName() + " wants to be watered with " + this.calculateLiquidAmount() + " liters of " + this.getLiquidType().getReadableString();
+        return wateringMessage;
     }
 }

@@ -26,7 +26,7 @@ public class Main {
             else {
                 for (Plant plant : hostedPlants) {
                     if (usersChoiceEdit.equalsIgnoreCase(plant.getName())) {
-                        plant.wateringService();
+                        System.out.println(plant.wateringService());
                         found = true;
                         break;
                     }
