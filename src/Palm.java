@@ -1,10 +1,14 @@
+// Palm extends Plant therefore inheritance is used to follow the Plant class characteristics and behaviours.
 public class Palm extends Plant {
+
+    private static final double heightMultiplier = 0.5;
+
     public Palm(String name, double height) {
         super(name, height);
     }
 
     public double calculateLiquidAmount(){
-        return 0.5 * getHeight();
+        return heightMultiplier * getHeight();
 
     }
 

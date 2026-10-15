@@ -17,6 +17,4 @@ public abstract class Plant {
     }
     public abstract String wateringService ();
 
-  //  String wateringMessage = "The plant called " + this.name + " wants to be watered with " + this.calculateLiquidAmount() + " liters of " + this.getLiquidType();
-  //      return wateringMessage
 }

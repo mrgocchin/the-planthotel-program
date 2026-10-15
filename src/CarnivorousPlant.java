@@ -1,10 +1,15 @@
+//CarnivorousPlant extends Plant therefore inheritance is used to follow the Plant-class' characteristics and behaviours
+
 public class CarnivorousPlant extends Plant {
+    private static final double baseWateringAmount = 0.1;
+    private static final double heightMultiplier = 0.2;
 
     public CarnivorousPlant(String name, double height) {
         super(name, height);
     }
+
     public double calculateLiquidAmount(){
-        return 0.1 + (0.2 * getHeight());
+        return baseWateringAmount + (heightMultiplier * getHeight());
 
     }
 
@@ -16,7 +21,10 @@ public class CarnivorousPlant extends Plant {
     @Override
     public String wateringService (){
 
-        String wateringMessage = "The plant called " + this.getName() + " wants to be watered with " + this.calculateLiquidAmount() + " liters of " + this.getLiquidType().getReadableString();
+        String wateringMessage = "The plant called " +
+                this.getName() + " wants to be watered with " +
+                this.calculateLiquidAmount() + " liters of " +
+                this.getLiquidType().getReadableString();
         return wateringMessage;
     }
 

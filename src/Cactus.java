@@ -1,9 +1,13 @@
+//Cactus extends Plant therefore inheritance is used to follow the Plant class characteristics and behaviours.
 public class Cactus extends Plant {
+
+    private static final double baseWateringAmount =0.02;
+
     public Cactus(String name, double height) {
         super(name, height);
     }
     public double calculateLiquidAmount(){
-        return 0.02;
+        return baseWateringAmount;
 
     }
 

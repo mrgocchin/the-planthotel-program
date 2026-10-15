@@ -43,27 +43,8 @@ public class Main {
 
 
 
-    } //STATIC VOID MAIN
-} // MAIN CLASS
-
-        // better to not have many if statements
-        // check pizza project to reuse menu code and switch case
-
-
-
-
-
-
-
-        /*
-        double liquidAmount = laura.calculateLiquidAmount();
-        LiquidType liquidType = laura.getLiquidType;
-
-        sout plant leura.getname;
-        sout   liquid type getliquidtype;
-        sout liquid amount
-
-           */
+    }
+}
 
 
 
