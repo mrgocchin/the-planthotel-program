@@ -6,9 +6,11 @@ public enum LiquidType {
     private final String readableString ;
 
     LiquidType(String readableString) {
+
         this.readableString = readableString;
     }
     public String getReadableString(){
-        return this.readableString;
+
+        return readableString;
     }
 }

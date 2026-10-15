@@ -16,9 +16,12 @@ public class Main {
         boolean running = true;
         while (running) {
             boolean found = false;
-            System.out.println("To get watering instructions, type the plant's name below.\nOtherwise type \"exit\" to leave.");
+            System.out.println( "To get watering instructions, type the plant's name below." +
+                                "\nOtherwise type \"exit\" to leave.");
+
             String usersChoiceRaw = scanner.nextLine();
             String usersChoiceEdit = usersChoiceRaw.trim();
+
             if ( usersChoiceEdit.equalsIgnoreCase("exit")){
                 System.out.println("Thank you, good bye!");
                 running = false;
@@ -27,12 +30,14 @@ public class Main {
                 for (Plant plant : hostedPlants) {
                     if (usersChoiceEdit.equalsIgnoreCase(plant.getName())) {
                         System.out.println(plant.wateringService());
+
                         found = true;
                         break;
                     }
                 }
                 if (!found) {
-                    System.out.println("I don't recognise the name.\nMake sure to spell the name correctly and try again!");
+                    System.out.println("I don't recognise the name." +
+                                        "\nMake sure to spell the name correctly and try again!");
                 }
             }
 
