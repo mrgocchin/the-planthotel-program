@@ -1,5 +1,5 @@
-public abstract class Plant {
-   // why not necessary? --> private String plantSpecie;
+public abstract class Plant
+{
     private double height;
     private String name;
 
