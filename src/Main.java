@@ -11,6 +11,7 @@ public class Main {
         hostedPlants.add(new Palm ( "Olof", 1.0));
         hostedPlants.add(new CarnivorousPlant("Meatloaf", 0.7));
         hostedPlants.add(new Cactus("Igge", 0.20));
+
         System.out.println("Welcome!");
 
         boolean running = true;

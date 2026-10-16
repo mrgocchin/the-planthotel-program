@@ -1,5 +1,5 @@
 //Cactus extends Plant therefore inheritance is used to follow the Plant class characteristics and behaviours.
-public class Cactus extends Plant implements CanCalculateLiquidAmount {
+public class Cactus extends Plant implements Waterable {
 
     private static final double baseWateringAmount =0.02;
 

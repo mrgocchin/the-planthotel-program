@@ -1,7 +1,7 @@
 //Inheritance:
 // CarnivorousPlant extends Plant therefore inheritance is used to follow the Plant-class' characteristics and behaviours
 
-public class CarnivorousPlant extends Plant implements CanCalculateLiquidAmount {
+public class CarnivorousPlant extends Plant implements Waterable {
     private static final double baseWateringAmount = 0.1;
     private static final double heightMultiplier = 0.2;
 
