@@ -1,5 +1,5 @@
-//Inheritance:
-// CarnivorousPlant extends Plant therefore inheritance is used to follow the Plant-class' characteristics and behaviours
+//Inheritance: CarnivorousPlant extends Plant.
+// It inherits the Plant-class' characteristics and behaviours.
 
 public class CarnivorousPlant extends Plant implements Waterable {
     private static final double baseWateringAmount = 0.1;
@@ -7,7 +7,7 @@ public class CarnivorousPlant extends Plant implements Waterable {
 
 
     // Encapsulation: The class controls access to its data with private fields.
-    // Methods control access to data and behaviour.
+    // Methods control access to the fields value.
 
 
     public CarnivorousPlant(String name, double height) {

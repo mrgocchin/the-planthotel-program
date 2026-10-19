@@ -2,6 +2,9 @@ public abstract class Plant {
     private double height;
     private String name;
 
+    // Encapsulation: The class controls access to its data with private fields.
+    // Methods control access to the fields value.
+
     public Plant(String name, double height) {
         this.height = height;
         this.name = name;
@@ -24,7 +27,7 @@ public abstract class Plant {
 
 
     //Polymorphism:
-    //The class Plant has set the methods getLiquidType, getPlantSpecie and calculateLiquidAmount to abstract and empty.
+    //The class Plant has set the methods getLiquidType, getPlantSpecies, getUnitOfMeasure and calculateLiquidAmount to abstract and empty.
     //These are overridden in each subclass in order to implement them differently.
     //When wateringService is called on any plant object, it results in the behaviour described by the object's class.
 
