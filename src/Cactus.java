@@ -1,34 +1,31 @@
 //Cactus extends Plant therefore inheritance is used to follow the Plant class characteristics and behaviours.
 public class Cactus extends Plant implements Waterable {
 
-    private static final double baseWateringAmount =0.02;
+    private static final double baseWateringAmount = 2;
 
     public Cactus(String name, double height) {
-
         super(name, height);
     }
 
-
-    public double calculateLiquidAmount(){
-        return baseWateringAmount;
-
-    }
-
-
-    public String getLiquidType(){
-        return LiquidType.MINERAL_WATER.getReadableString();
-
-    }
-    public String getPlantSpecie(){
-        return PlantSpecie.CACTUS.getReadableString();
-    }
     @Override
-    public String wateringService (){
-
-        String wateringMessage = "The plant called " +
-                this.getName() + " wants to be watered with " +
-                this.calculateLiquidAmount() + " liters of " +
-                this.getLiquidType();
-        return wateringMessage;
+    public String getPlantSpecies() {
+        return PlantSpecies.CACTUS.getReadableString();
     }
+
+    @Override
+    public double calculateLiquidAmount() {
+        return baseWateringAmount;
+    }
+
+    @Override
+    public String getUnitOfMeasure() {
+        return UnitOfMeasure.CENTILITERS.getUnitAbbreviation();
+    }
+
+    @Override
+    public String getLiquidType() {
+        return LiquidType.MINERAL_WATER.getReadableString();
+    }
+
+
 }

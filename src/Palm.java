@@ -7,25 +7,24 @@ public class Palm extends Plant implements Waterable {
         super(name, height);
     }
 
-    public double calculateLiquidAmount(){
-        return heightMultiplier * getHeight();
-
+    @Override
+    public String getPlantSpecies() {
+        return PlantSpecies.PALM.getReadableString();
     }
 
-   public String getLiquidType(){
-        return LiquidType.TAP_WATER.getReadableString();
-   }
-   public String getPlantSpecie(){
-        return PlantSpecie.PALM.getReadableString();
-   }
     @Override
-    public String wateringService (){
+    public double calculateLiquidAmount() {
+        return heightMultiplier * getHeight();
+    }
 
-        String wateringMessage = "The "+ this.getPlantSpecie()+" called " +
-                this.getName() + " wants to be watered with " +
-                this.calculateLiquidAmount() + " liters of " +
-                this.getLiquidType();
-        return wateringMessage;
+    @Override
+    public String getUnitOfMeasure() {
+        return UnitOfMeasure.LITERS.getUnitAbbreviation();
+    }
+
+    @Override
+    public String getLiquidType() {
+        return LiquidType.TAP_WATER.getReadableString();
     }
 
 

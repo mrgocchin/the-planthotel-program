@@ -1,11 +1,11 @@
-public enum PlantSpecie {
+public enum PlantSpecies {
     PALM("Palm"),
-    CACTUS("Catus"),
+    CACTUS("Cactus"),
     CARNIVOROUS_PLANT("Carnivorous plant");
 
     private final String readableString;
 
-    PlantSpecie(String readableString) {
+    PlantSpecies(String readableString) {
         this.readableString = readableString;
     }
 

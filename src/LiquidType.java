@@ -1,16 +1,15 @@
 public enum LiquidType {
-    TAP_WATER("Tap water"),
-    MINERAL_WATER("Mineral water"),
-    PROTEIN_DRINK("Protein drink");
+    TAP_WATER("tap water"),
+    MINERAL_WATER("mineral water"),
+    PROTEIN_DRINK("protein drink");
 
-    private final String readableString ;
+    private final String readableString;
 
     LiquidType(String readableString) {
-
         this.readableString = readableString;
     }
-    public String getReadableString(){
 
+    public String getReadableString() {
         return readableString;
     }
 }

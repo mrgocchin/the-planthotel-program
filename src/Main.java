@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        
+
         ArrayList<Plant> hostedPlants = new ArrayList<>();
         hostedPlants.add(new Palm("Laura", 5.0));
-        hostedPlants.add(new Palm ( "Olof", 1.0));
+        hostedPlants.add(new Palm("Olof", 1.0));
         hostedPlants.add(new CarnivorousPlant("Meatloaf", 0.7));
         hostedPlants.add(new Cactus("Igge", 0.20));
 
@@ -17,17 +17,16 @@ public class Main {
         boolean running = true;
         while (running) {
             boolean found = false;
-            System.out.println( "To get watering instructions, type the plant's name below." +
-                                "\nOtherwise type \"exit\" to leave.");
+            System.out.println("To get watering instructions, type the plant's name below." +
+                    "\nOtherwise type \"exit\" to leave.");
 
             String usersChoiceRaw = scanner.nextLine();
             String usersChoiceEdit = usersChoiceRaw.trim();
 
-            if ( usersChoiceEdit.equalsIgnoreCase("exit")){
+            if (usersChoiceEdit.equalsIgnoreCase("exit")) {
                 System.out.println("Thank you, good bye!");
                 running = false;
-            }
-            else {
+            } else {
                 for (Plant plant : hostedPlants) {
                     if (usersChoiceEdit.equalsIgnoreCase(plant.getName())) {
                         System.out.println(plant.wateringService());
@@ -38,15 +37,13 @@ public class Main {
                 }
                 if (!found) {
                     System.out.println("I don't recognise the name." +
-                                        "\nMake sure to spell the name correctly and try again!");
+                            "\nMake sure to spell the name correctly and try again!");
                 }
             }
 
 
-
-
         }
-
+        scanner.close();
 
 
     }
