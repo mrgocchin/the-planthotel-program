@@ -1,5 +1,5 @@
 // Palm extends Plant therefore inheritance is used to follow the Plant class characteristics and behaviours.
-public class Palm extends Plant implements Waterable {
+public class Palm extends Plant {
 
     private static final double heightMultiplier = 0.5;
 

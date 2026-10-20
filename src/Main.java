@@ -6,7 +6,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<Plant> hostedPlants = new ArrayList<>();
+        ArrayList<Waterable> hostedPlants = new ArrayList<>();
         hostedPlants.add(new Palm("Laura", 5.0));
         hostedPlants.add(new Palm("Olof", 1.0));
         hostedPlants.add(new CarnivorousPlant("Meatloaf", 0.7));
@@ -27,9 +27,12 @@ public class Main {
                 System.out.println("Thank you, good bye!");
                 running = false;
             } else {
-                for (Plant plant : hostedPlants) {
-                    if (usersChoiceEdit.equalsIgnoreCase(plant.getName())) {
-                        System.out.println(plant.wateringService());
+                for (Waterable waterable : hostedPlants) {
+                    if (usersChoiceEdit.equalsIgnoreCase(waterable.getName())) {
+                        System.out.println(waterable.wateringService());
+                        //wateringService() is called through the waterable interface.
+                        //This produces different results depending on the actual object,
+                        // but there is no need to specify the actual class.
 
                         found = true;
                         break;
