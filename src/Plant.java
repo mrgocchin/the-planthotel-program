@@ -1,6 +1,6 @@
-//Interface: Waterable is implemented here to garantee that all subclasses have the required methods without repenting code.
-//inheritance: The subclasses automatically implement Waterable by Inheritance.
-public abstract class Plant implements Waterable{
+//Interface: Waterable is implemented here to guarantee that all subclasses have the required methods without repeating code.
+//Inheritance: The subclasses automatically implement Waterable by Inheritance.
+public abstract class Plant implements Waterable {
     private double height;
     private String name;
 
@@ -15,15 +15,15 @@ public abstract class Plant implements Waterable{
     public double getHeight() {
         return height;
     }
+
     public String getName() {
         return name;
     }
 
-
     //Polymorphism:
-    //The method wateringService() is written only once for all the subclasses of Plant.
+    //The method wateringService() is written only here for all Plant subclasses.
     //The methods getLiquidType, getPlantSpecies, getUnitOfMeasure and calculateLiquidAmount
-    // are overridden in each subclass.
+    // necessary for watering service are overridden in each subclass.
     //This allows to get different result from wateringService() depending on the selected object.
 
     public String wateringService() {

@@ -1,4 +1,5 @@
-// Palm extends Plant therefore inheritance is used to follow the Plant class characteristics and behaviours.
+//Inheritance: Palm extends Plant therefore it follows the Plant class characteristics and behaviours.
+//Interface: by inheritance Palm implements the Waterable interface.
 public class Palm extends Plant {
 
     private static final double heightMultiplier = 0.5;

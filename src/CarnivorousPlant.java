@@ -1,6 +1,6 @@
 //Inheritance: CarnivorousPlant extends Plant.
-//It inherits the Plant-class' characteristics and behaviours, including the contract with Waterable.
-//It fulfills the Waterable methods by overriding them with its specific implementations.
+//It inherits the Plant-class' characteristics and behaviours, including the Waterable interface.
+//Each subclass of plant fulfills the Waterable methods by overriding them with specific implementations.
 
 public class CarnivorousPlant extends Plant {
     private static final double baseWateringAmount = 0.1;

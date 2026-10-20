@@ -1,4 +1,6 @@
-//Cactus extends Plant therefore inheritance is used to follow the Plant class characteristics and behaviours.
+//Inheritance: Cactus extends Plant therefore it follows the Plant class characteristics and behaviours.
+//Interface: by inheritance Cactus implements the Waterable interface.
+
 public class Cactus extends Plant {
 
     private static final double baseWateringAmount = 2;

@@ -27,12 +27,13 @@ public class Main {
                 System.out.println("Thank you, good bye!");
                 running = false;
             } else {
+
+                //Interface: wateringService() is called through the Waterable interface.
+                //This produces different results depending on the actual object, without the need to specify the class.
+
                 for (Waterable waterable : hostedPlants) {
                     if (usersChoiceEdit.equalsIgnoreCase(waterable.getName())) {
                         System.out.println(waterable.wateringService());
-                        //wateringService() is called through the waterable interface.
-                        //This produces different results depending on the actual object,
-                        // but there is no need to specify the actual class.
 
                         found = true;
                         break;

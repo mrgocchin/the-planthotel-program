@@ -1,5 +1,6 @@
-//Interface: This binds all classes that can be watered.
-// From main one does not need to know the object class, but only if it can be watered.
+//Interface: This binds all classes that implement it.
+//From main one does not need to know the objects class, but only if it can be watered.
+
 public interface Waterable {
     public double calculateLiquidAmount();
 
